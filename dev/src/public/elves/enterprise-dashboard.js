@@ -71,9 +71,9 @@ $.draw((target) => {
   return `
     <div class="header">
       <button data-sidebar>
-        <sl-icon name="layout-sidebar-inset"></sl-icon>
+        <span><sl-icon name="layout-sidebar-inset"></sl-icon></span>
+        <span class="logomark">Hive Labworks</span>
       </button>
-      <span class="logomark">Hive Labworks</span>
     </div>
     <div class="control ${sidebar ? 'sidebar': ''}" aria-live="assertive">
       <div class="control-tab-list">

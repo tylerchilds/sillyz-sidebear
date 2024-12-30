@@ -5,15 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Sidebear</title>
+    <style>
+      html,body,iframe{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        overflow: hidden;
+      }
+    </style>
   </head>
   <body>
-    <data-tooltip>
-    <data-popover>
-      <main id="main">
-        <enterprise-dashboard></enterprise-dashboard>
-      </main>
-    </data-popover>
-    </data-tooltip>
-    <script src="sidepanel.js" type="module"></script>
+    <iframe src="dev/dist/index.html"></iframe>
   </body>
 </html>

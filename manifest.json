@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Sidebear is a friend that helps process information anywhere.",
   "icons": {
-    "16": "public/images/16x16.png"
+    "16": "dev/src/public/images/16x16.png"
   },
   "background": {
     "service_worker": "service-worker.js"

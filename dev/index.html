@@ -4,10 +4,100 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Sidebear</title>
+    <style>
+      :root {
+        --shadow: 0px 0px 2px 2px rgba(0,0,0,.25),
+                  0px 0px 6px 6px rgba(0,0,0,.15),
+                  0px 0px 2rem 2rem rgba(0,0,0,.05);
+        --red: firebrick;
+        --orange: darkorange;
+        --yellow: gold;
+        --green: mediumseagreen;
+        --blue: dodgerblue;
+        --purple: mediumpurple;
+      }
+      html, body {
+        height: 100%;
+        background: rgba(255,255,255,.85);
+        overscroll-behavior: none;
+      }
+
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes scale-it {
+        0% {
+          transform: scale(.5);
+        }
+
+        100% {
+          transform: scale(2);
+        }
+      }
+
+
+
+      @media screen {
+        body{ overflow: auto; }
+      }
+
+      body > *{
+        position: relative;
+        z-index: 2;
+      }
+
+      main {
+        position: relative;
+        height: 100%;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+
+      boot-loader {
+        max-width: 100%;
+        margin: auto;
+        pointer-events: none;
+      }
+
+      #bootloader {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        z-index: 1;
+      }
+
+      button * {
+        pointer-events: none;
+      }
+
+      body[pathname$=".saga"] main {
+        height: auto;
+      }
+    </style>
+
+    <link href="/src/public/styles/system.css" rel="stylesheet">
   </head>
   <body>
     <div id="app"></div>
+    <data-tooltip>
+    <data-popover>
+      <main id="main">
+        <enterprise-dashboard></enterprise-dashboard>
+      </main>
+    </data-popover>
+    </data-tooltip>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
