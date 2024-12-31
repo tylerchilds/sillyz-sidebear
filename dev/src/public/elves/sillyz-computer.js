@@ -1,4 +1,4 @@
-import elf from '@silly/elf'
+import elf from '../elf.js'
 import $intro from './plan98-intro.js'
 import $zune from './plan9-zune.js'
 import { innerHTML } from 'diffhtml'
