@@ -9,11 +9,16 @@
   "background": {
     "service_worker": "service-worker.js"
   },
+  "host_permissions": ["<all_urls>"],
   "action": {
     "default_title": "Click to open panel"
   },
   "side_panel": {
     "default_path": "sidepanel.html"
   },
-  "permissions": ["sidePanel"]
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting"
+  ]
 }
